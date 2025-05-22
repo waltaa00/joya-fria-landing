@@ -23,7 +23,7 @@ const DotNavigation = ({ activeSection }) => {
       <ul role="list" className="dot-list">
         {sections.map(({ id, label }) => (
           <li key={id} role="listitem">
-            <button
+        <button
               className={`dot ${activeSection === id ? "active" : ""}`}
               onClick={() => document.getElementById(id).scrollIntoView({ behavior: "smooth" })}
               onKeyDown={(e) => handleKeyPress(e, id)}
@@ -34,7 +34,7 @@ const DotNavigation = ({ activeSection }) => {
               <span className="dot-label">{label}</span>
             </button>
           </li>
-        ))}
+      ))}
       </ul>
     </nav>
   )

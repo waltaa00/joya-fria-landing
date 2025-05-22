@@ -11,28 +11,29 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  padding: 40px 0;
+  padding: 0px 0;
 }
 
 .inicio-title {
   font-size: 40px;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+  margin-top: -20px;
+}
+
+.inicio-subtitle {
+  font-size: 24px;
   margin-bottom: 15px;
   opacity: 0;
   transform: translateY(30px);
   transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
-.inicio-subtitle {
-  font-size: 24px;
-  margin-bottom: 30px;
-  opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.8s ease, transform 0.8s ease;
-}
-
 .inicio-image-container {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   width: 100%;
+  height: 90%;
   max-width: 600px;
   opacity: 0;
   transform: scale(0.95);
@@ -49,7 +50,7 @@
   opacity: 0;
   transform: translateY(30px);
   transition: opacity 0.8s ease, transform 0.8s ease;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .inicio-button:hover {
@@ -73,6 +74,7 @@
 @media (max-width: 768px) {
   .inicio {
     min-height: auto;
+    margin-top: 50px;
   }
 
   .inicio-container {

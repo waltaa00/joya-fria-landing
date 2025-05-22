@@ -67,7 +67,7 @@
   .dot:hover .dot-label {
     display: block;
     opacity: 1;
-  }
+}
 }
 
 /* Show only in mobile */
