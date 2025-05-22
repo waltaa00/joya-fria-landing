@@ -1,0 +1,44 @@
+.footer {
+  background-color: #4A3933;
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.footer.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.footer-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer-text {
+  color: #FFFFFF;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 16px;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 15px;
+  }
+
+  .footer-content {
+    max-width: 100%;
+  }
+
+  .footer-text {
+    font-size: 14px;
+  }
+} 

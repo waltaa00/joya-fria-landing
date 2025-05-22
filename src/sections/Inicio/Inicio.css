@@ -1,0 +1,102 @@
+.inicio {
+  text-align: center;
+  background-color: var(--background);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.inicio-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 40px 0;
+}
+
+.inicio-title {
+  font-size: 40px;
+  margin-bottom: 15px;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.inicio-subtitle {
+  font-size: 24px;
+  margin-bottom: 30px;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.inicio-image-container {
+  margin-bottom: 30px;
+  width: 100%;
+  max-width: 600px;
+  opacity: 0;
+  transform: scale(0.95);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.inicio-button {
+  background-color: var(--primary);
+  color: var(--text);
+  border: none;
+  border-radius: 30px;
+  padding: 12px 25px;
+  font-size: 18px;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+  margin-bottom: 20px;
+}
+
+.inicio-button:hover {
+  opacity: 0.9;
+}
+
+/* Animation classes */
+.inicio-title.animate-in,
+.inicio-subtitle.animate-in,
+.inicio-button.animate-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.inicio-image-container.animate-in {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Add responsive margins */
+@media (max-width: 768px) {
+  .inicio {
+    min-height: auto;
+  }
+
+  .inicio-container {
+    padding: 30px 20px; /* Reduced vertical padding */
+    margin-right: 40px; /* Space for dot navigation */
+  }
+
+  .inicio-title {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+
+  .inicio-subtitle {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .inicio-image-container {
+    margin-bottom: 20px;
+    max-width: 100%;
+  }
+
+  .inicio-button {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+}
